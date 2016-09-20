@@ -3,29 +3,24 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package math.geometry.quadrilaterals;
+package ec.edu.espe.math.geometry.quadrilaterals;
 
 /**
  *
  * @author alexander
  */
-public class Parallelogram extends Quadrilaterals {
-    private float sideI,height;
-
-    public Parallelogram(float height,float sideI, float side) {
+public class Square extends Quadrilaterals{
+    public Square(float side) {
         super(side);
-        this.sideI = sideI;
-        this.height=height;
     }
 
     @Override
     public float CalculateArea() {
-        return this.height*this.side;
+       return this.side*4;
     }
-
     @Override
     public float CalculatePerimeter() {
-        return this.sideI*2+this.side*2;
+       return this.side*this.side;
     }
     
 }

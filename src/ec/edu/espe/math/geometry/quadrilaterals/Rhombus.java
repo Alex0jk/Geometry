@@ -1,5 +1,5 @@
 
-package math.geometry.quadrilaterals;
+package ec.edu.espe.math.geometry.quadrilaterals;
 import java.math.*;
 
 public class Rhombus extends Quadrilaterals{

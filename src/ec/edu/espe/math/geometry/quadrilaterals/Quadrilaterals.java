@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package math.geometry.quadrilaterals;
+package ec.edu.espe.math.geometry.quadrilaterals;
 
-import math.geometry.Shape;
+import ec.edu.espe.math.geometry.Shape;
 
 /**
  *

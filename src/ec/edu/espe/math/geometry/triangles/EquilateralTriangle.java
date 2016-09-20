@@ -3,24 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package math.geometry.quadrilaterals;
+package ec.edu.espe.math.geometry.triangles;
 
 /**
  *
  * @author alexander
  */
-public class Square extends Quadrilaterals{
-    public Square(float side) {
-        super(side);
-    }
+public class EquilateralTriangle extends Triangle{
 
-    @Override
-    public float CalculateArea() {
-       return this.side*4;
+    public EquilateralTriangle(float sideBase, float sideHeight) {
+        super(sideBase, sideHeight);
     }
+    
     @Override
     public float CalculatePerimeter() {
-       return this.side*this.side;
+        return 3*this.sideBase;
     }
     
 }
