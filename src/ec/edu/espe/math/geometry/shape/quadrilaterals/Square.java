@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ec.edu.espe.math.geometry.quadrilaterals;
+package ec.edu.espe.math.geometry.shape.quadrilaterals;
 
 /**
  *
  * @author alexander
  */
-public class Square extends Quadrilaterals{
+public class Square extends Quadrilateral{
     public Square(float side) {
         super(side);
     }

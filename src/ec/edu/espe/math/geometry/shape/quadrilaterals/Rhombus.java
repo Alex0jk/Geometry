@@ -1,8 +1,8 @@
 
-package ec.edu.espe.math.geometry.quadrilaterals;
+package ec.edu.espe.math.geometry.shape.quadrilaterals;
 import java.math.*;
 
-public class Rhombus extends Quadrilaterals{
+public class Rhombus extends Quadrilateral{
     private float bigDiagonal,smallDiagonal;
 
     public Rhombus(float bigDiagonal, float smallDiagonal) {

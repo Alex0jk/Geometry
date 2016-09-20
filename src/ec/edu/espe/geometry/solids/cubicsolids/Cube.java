@@ -3,29 +3,31 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ec.edu.espe.math.geometry.quadrilaterals;
+package ec.edu.espe.geometry.solids.cubicsolids;
 
 /**
  *
  * @author alexander
  */
-public class Parallelogram extends Quadrilaterals {
-    private float sideI,height;
+public class Cube extends CubicSolid{
 
-    public Parallelogram(float height,float sideI, float side) {
+    public Cube(float side) {
         super(side);
-        this.sideI = sideI;
-        this.height=height;
     }
 
     @Override
     public float CalculateArea() {
-        return this.height*this.side;
+        return (float)(6*Math.pow(side,2));
     }
 
     @Override
     public float CalculatePerimeter() {
-        return this.sideI*2+this.side*2;
+        return 1;
+    }
+
+    @Override
+    public float CalculateVolume() {
+        return (float)(Math.pow(side, 3));
     }
     
 }

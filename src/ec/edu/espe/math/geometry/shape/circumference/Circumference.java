@@ -1,7 +1,7 @@
 
-package ec.edu.espe.math.geometry.circumference;
+package ec.edu.espe.math.geometry.shape.circumference;
 
-import ec.edu.espe.math.geometry.Shape;
+import ec.edu.espe.math.geometry.shape.Shape;
 
 public abstract class Circumference extends Shape{
     protected float radius;

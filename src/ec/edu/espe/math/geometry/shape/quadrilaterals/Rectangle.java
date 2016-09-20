@@ -3,26 +3,28 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ec.edu.espe.math.geometry.circumference;
+package ec.edu.espe.math.geometry.shape.quadrilaterals;
 
 /**
  *
  * @author alexander
  */
-public class Circle extends Circumference{
+public class Rectangle extends Quadrilateral{
+    private float height;
 
-    public Circle(float radius) {
-        super(radius);
+    public Rectangle(float side,float height) {
+        super(side);
+        this.height=height;
     }
 
     @Override
     public float CalculateArea() {
-        return (float)(Math.PI*Math.pow(radius,2));
+        return this.side*2+this.height*2;
     }
 
     @Override
     public float CalculatePerimeter() {
-        return (float)(2*Math.PI*this.radius);
+        return this.side*this.height;
     }
     
 }

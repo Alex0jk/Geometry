@@ -3,28 +3,26 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ec.edu.espe.math.geometry.circumference;
+package ec.edu.espe.math.geometry.shape.circumference;
 
 /**
  *
  * @author alexander
  */
-public class Ellipse extends Circumference{
-    private float otherRadius;
+public class Circle extends Circumference{
 
-    public Ellipse(float otherRadius, float radius) {
+    public Circle(float radius) {
         super(radius);
-        this.otherRadius = otherRadius;
     }
 
     @Override
     public float CalculateArea() {
-        return (float)(Math.PI*this.radius*this.otherRadius);
+        return (float)(Math.PI*Math.pow(radius,2));
     }
 
     @Override
     public float CalculatePerimeter() {
-        return (float)(2*Math.PI*Math.sqrt((Math.pow(this.radius, 2)+Math.pow(this.otherRadius,2))/2));
+        return (float)(2*Math.PI*this.radius);
     }
     
 }

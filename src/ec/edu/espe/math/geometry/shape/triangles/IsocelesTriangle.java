@@ -3,22 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ec.edu.espe.math.geometry.triangles;
+package ec.edu.espe.math.geometry.shape.triangles;
 
 /**
  *
  * @author alexander
  */
-public class RightAngleTriangle extends Triangle {
+public class IsocelesTriangle extends Triangle{
+    private float sideTwoThree;
 
-    public RightAngleTriangle(float sideBase, float sideHeight) {
+    public IsocelesTriangle(float sideTwoThree, float sideBase, float sideHeight) {
         super(sideBase, sideHeight);
+        this.sideTwoThree = sideTwoThree;
     }
 
-    
     @Override
     public float CalculatePerimeter() {
-        return this.sideBase+this.sideHeight+(float)(Math.sqrt(Math.pow(this.sideBase,2)+Math.pow(this.sideHeight,2)));
+        return this.sideBase+this.sideTwoThree*2;
     }
     
 }

@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ec.edu.espe.math.geometry.quadrilaterals;
+package ec.edu.espe.math.geometry.shape.quadrilaterals;
 
-import ec.edu.espe.math.geometry.Shape;
+import ec.edu.espe.math.geometry.shape.Shape;
 
 /**
  *
  * @author alexander
  */
-public abstract class Quadrilaterals  extends Shape{
+public abstract class Quadrilateral  extends Shape{
     protected float side;//also the base of some shapes
 
-    public Quadrilaterals(float side) {
+    public Quadrilateral(float side) {
         this.side = side;
     }
 
