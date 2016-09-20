@@ -11,4 +11,5 @@ package ec.edu.espe.math.geometry.solids.solids;
  */
 public interface SolidInterface {
     public abstract float CalculateVolume();
+     public abstract float CalculateArea();
 }

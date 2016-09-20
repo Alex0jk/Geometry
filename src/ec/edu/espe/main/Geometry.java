@@ -19,6 +19,12 @@ import ec.edu.espe.math.geometry.shape.triangles.EquilateralTriangle;
 import ec.edu.espe.math.geometry.shape.triangles.IsocelesTriangle;
 import ec.edu.espe.math.geometry.shape.triangles.ObtuseAngleTriangle;
 import ec.edu.espe.math.geometry.shape.triangles.RightAngleTriangle;
+import ec.edu.espe.math.geometry.solids.circularsolids.Cone;
+import ec.edu.espe.math.geometry.solids.circularsolids.Cylinder;
+import ec.edu.espe.math.geometry.solids.circularsolids.Frustum;
+import ec.edu.espe.math.geometry.solids.circularsolids.Sphere;
+import ec.edu.espe.math.geometry.solids.cubicsolids.Cube;
+import ec.edu.espe.math.geometry.solids.solids.SolidInterface;
 
 /**
  *
@@ -31,6 +37,7 @@ public class Geometry {
      */
     public static void main(String[] args) {
         Shape[] shapes=new Shape[12];
+        SolidInterface[] solids=new SolidInterface[5];
         shapes[0]=new Rectangle(3, 4);
         shapes[1]=new Square(3);
         shapes[2]=new Trapezoid(3,4,5);
@@ -43,9 +50,18 @@ public class Geometry {
         shapes[9]=new ObtuseAngleTriangle(5, 6, 7, 3);
         shapes[10]=new IsocelesTriangle(4, 5, 2);
         shapes[11]=new RightAngleTriangle(4, 3);
+        solids[0]=new Sphere(4);
+        solids[1]=new Cone(5, 2);
+        solids[2]=new Cylinder(7, 1);
+        solids[3]=new Frustum(4, 5, 7);
+        solids[4]=new Cube(5);
         for(int i=0;i<12;i++){
             PrinterUtil.printShape(shapes[i].getClass().getSimpleName(), GeometricConstants.PERIMETER, shapes[i].CalculatePerimeter());
             PrinterUtil.printShape(shapes[i].getClass().getSimpleName(), GeometricConstants.AREA, shapes[i].CalculateArea());
+        }
+        for(int i=0;i<5;i++){
+            PrinterUtil.printShape(solids[i].getClass().getSimpleName(),GeometricConstants.AREA , solids[i].CalculateArea());
+            PrinterUtil.printShape(solids[i].getClass().getSimpleName(),GeometricConstants.VOLUME , solids[i].CalculateVolume());
         }
     }
     

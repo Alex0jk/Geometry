@@ -12,4 +12,5 @@ package ec.edu.espe.util;
 public class GeometricConstants {
     public static final String PERIMETER="Perimeter";
     public static final String AREA="Area";
+    public static final String VOLUME="Volume";
 }
