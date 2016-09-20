@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ec.edu.espe.geometry.solids.cubicsolids;
+package ec.edu.espe.math.geometry.solids.cubicsolids;
 
-import ec.edu.espe.geometry.solids.SolidInterface;
+import ec.edu.espe.math.geometry.solids.solids.SolidInterface;
 import ec.edu.espe.math.geometry.shape.quadrilaterals.Quadrilateral;
 
 

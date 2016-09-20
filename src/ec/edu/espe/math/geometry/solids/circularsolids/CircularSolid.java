@@ -5,7 +5,7 @@
  */
 package ec.edu.espe.math.geometry.solids.circularsolids;
 
-import ec.edu.espe.geometry.solids.SolidInterface;
+import ec.edu.espe.math.geometry.solids.solids.SolidInterface;
 import ec.edu.espe.math.geometry.shape.circumference.Circumference;
 
 /**
