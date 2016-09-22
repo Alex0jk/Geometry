@@ -76,5 +76,13 @@ public class FrustumTest {
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
     }
+    @Test
+    public void testCalculateNotEquals(){
+        System.out.println("CalculatePerimeter");
+        Frustum instance = new Frustum(3, 2,4);
+        float expResult = 8;
+        float result = instance.CalculatePerimeter();
+        assertNotEquals(expResult, result, 0.0);
+    }
     
 }
