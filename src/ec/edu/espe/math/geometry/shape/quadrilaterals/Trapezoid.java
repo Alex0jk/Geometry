@@ -10,12 +10,13 @@ package ec.edu.espe.math.geometry.shape.quadrilaterals;
  * @author alexander
  */
 public class Trapezoid extends Quadrilateral{
-    private float minSide,sideA,sideC,height;
+    private float minSide,sideA,height;
 
     public Trapezoid(float minSide, float height, float side) {
         super(side);
         this.minSide = minSide;
         this.height = height;
+        sideA=(float)Math.sqrt(Math.pow(height,2)+Math.pow(side-minSide, 2));
     }
 
     @Override
@@ -25,6 +26,6 @@ public class Trapezoid extends Quadrilateral{
 
     @Override
     public float CalculatePerimeter() {
-        return this.minSide+this.sideA+this.sideC+this.side;
+        return this.minSide+this.sideA+this.height+this.side;
     }
 }

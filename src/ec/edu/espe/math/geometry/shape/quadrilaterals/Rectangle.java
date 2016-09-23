@@ -18,12 +18,12 @@ public class Rectangle extends Quadrilateral{
     }
 
     @Override
-    public float CalculateArea() {
+    public float CalculatePerimeter() {
         return this.side*2+this.height*2;
     }
 
     @Override
-    public float CalculatePerimeter() {
+    public float CalculateArea() {
         return this.side*this.height;
     }
     

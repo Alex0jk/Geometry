@@ -12,10 +12,12 @@ package ec.edu.espe.math.geometry.shape.triangles;
 public class ObtuseAngleTriangle extends Triangle{
     private float sideTwo,sideThree;
 
-    public ObtuseAngleTriangle(float sideTwo, float sideThree, float sideBase, float sideHeight) {
+    public ObtuseAngleTriangle(float sideTwo,float sideBase, float sideHeight) {
         super(sideBase, sideHeight);
+        float n=(float)Math.sqrt(Math.pow(sideTwo,2)-Math.pow(sideHeight,2));
+        float m=sideBase-n;
         this.sideTwo = sideTwo;
-        this.sideThree = sideThree;
+        this.sideThree = (float)Math.sqrt(Math.pow(sideHeight,2)+Math.pow(m,2));
     }
     @Override
     public float CalculatePerimeter() {

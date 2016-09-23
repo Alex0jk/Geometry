@@ -15,11 +15,11 @@ public class Square extends Quadrilateral{
     }
 
     @Override
-    public float CalculateArea() {
+    public float CalculatePerimeter() {
        return this.side*4;
     }
     @Override
-    public float CalculatePerimeter() {
+    public float CalculateArea() {
        return this.side*this.side;
     }
     

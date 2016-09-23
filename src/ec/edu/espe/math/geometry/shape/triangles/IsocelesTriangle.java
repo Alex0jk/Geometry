@@ -12,8 +12,8 @@ package ec.edu.espe.math.geometry.shape.triangles;
 public class IsocelesTriangle extends Triangle{
     private float sideTwoThree;
 
-    public IsocelesTriangle(float sideTwoThree, float sideBase, float sideHeight) {
-        super(sideBase, sideHeight);
+    public IsocelesTriangle(float sideTwoThree, float sideBase) {
+        super(sideBase,(float)(Math.sqrt(Math.pow(sideTwoThree,2)-Math.pow(sideBase/2,2))));
         this.sideTwoThree = sideTwoThree;
     }
 

@@ -11,13 +11,14 @@ package ec.edu.espe.math.geometry.shape.triangles;
  */
 public class EquilateralTriangle extends Triangle{
 
-    public EquilateralTriangle(float sideBase, float sideHeight) {
-        super(sideBase, sideHeight);
+    public EquilateralTriangle(float sideBase) {
+        super(sideBase,(float)Math.sqrt(Math.pow(sideBase,2)-Math.pow(sideBase/2,2)));        
     }
     
     @Override
     public float CalculatePerimeter() {
         return 3*this.sideBase;
     }
+    
     
 }
